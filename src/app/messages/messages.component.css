@@ -1,0 +1,38 @@
+.msg-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1em;
+  position: relative;
+  box-shadow: 0px 3px 2px #000;
+}
+.msg-container h4{
+  display: inline-block;
+  border-bottom: 1px solid var(--primary-color);
+  margin: 0 10px 0 0;
+  font-size: 21px;
+}
+.msg-container button.clear {
+  font-family: Arial;
+  background-color: #eee;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+.msg-container button:hover {
+  background-color: #cfd8dc;
+}
+.msg-container button:disabled {
+  background-color: #eee;
+  color: #aaa;
+  cursor: auto;
+}
+.msg-container button.clear {
+  color: #888;
+  margin-bottom: 12px;
+}
+
+.msg-container .alert-msg{
+  padding: 10px;
+  color: var(--secondary-color);
+}
