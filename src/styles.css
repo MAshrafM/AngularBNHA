@@ -20,6 +20,7 @@ body {
   margin: 2em 1em;
   background: url('./assets/img/bg.png') center / cover no-repeat,#26d9fa radial-gradient(circle farthest-corner,#26d9fa,#138db7);
   background-attachment: fixed;
+  min-height: 100vh;
 }
 body, input[text], button {
   color: var(--primary-color);
@@ -33,4 +34,22 @@ body, input[text], button {
 .logo{
   position: relative;
   left: calc(50% - 125px);
+}
+
+nav{
+  width: 100%;
+  padding: 5px 0;
+  background: rgba(0,0,0,.7);
+  height: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  line-height: 30px;
+  color: white;
+  font-size: 21px;
+  box-shadow: 0px 3px 5px black;
+}
+
+nav a{
+  text-decoration: none;
+  color: white;
 }
