@@ -18,7 +18,7 @@ h2, h3 {
 }
 body {
   margin: 2em 1em;
-  background: url('https://vignette.wikia.nocookie.net/bokunoheroacademia/images/1/12/Wikia_background.png') center / cover no-repeat,#26d9fa radial-gradient(circle farthest-corner,#26d9fa,#138db7);
+  background: url('./assets/img/bg.png') center / cover no-repeat,#26d9fa radial-gradient(circle farthest-corner,#26d9fa,#138db7);
   background-attachment: fixed;
 }
 body, input[text], button {

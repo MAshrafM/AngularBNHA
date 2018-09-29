@@ -57,20 +57,3 @@ h2 {
   border-radius: 4px;
 }
 
-.showHero{
-  width: 75%;
-  height: 150px;
-  margin: 0 auto;
-  background-color: #fff;
-  box-shadow: 0px 3px 5px 0px black;
-  padding: 0 3em;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  line-height: 120px;
-}
-
-.showHero img{
-  clip-path: circle(50% at 50% 50%);
-}

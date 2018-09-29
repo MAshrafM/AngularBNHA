@@ -1,0 +1,46 @@
+.showHero{
+  width: 75%;
+  height: 200px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0px 3px 5px 0px black;
+  padding: 0 3em;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.showHero img{
+  width: 150px;
+  height: 150px;
+  clip-path: circle(50% at 50% 50%);
+}
+
+.showHero .hero-name{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+.showHero .hero-name label {
+  position: absolute;
+  height: 30px;
+  display: flex;
+  line-height: 30px;
+  padding: 15px 0;
+  align-items: center;
+  top: 50%;
+  font-size: 20px;
+  color: #333;
+  font-weight: 500;
+}
+
+.showHero .hero-name input {
+  margin-left: 20px;
+  border: none;
+  border-bottom: 1px solid var(--secondary-color);
+  font-size: 14px;
+  outline: none;
+}

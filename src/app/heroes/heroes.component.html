@@ -1,9 +1,5 @@
 <h2>Heroes</h2>
-<div class="showHero" *ngIf="selectedHero">
-  <h3>Name: {{selectedHero.name | uppercase}}</h3>
-  <p>Height: {{selectedHero.height}}</p>
-  <img src="{{selectedHero.pp}}" alt="hero pic" />
-</div>
+<app-hero-detail [hero]="selectedHero"></app-hero-detail>
 <ul class="heroes">
   <li *ngFor="let hero of heroes" (click)="onSelect(hero)">
     <span class="badge">Height: {{hero.height}} cm</span> 

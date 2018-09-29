@@ -1,0 +1,10 @@
+<div class="showHero" *ngIf="hero">
+  <div class="hero-name">
+    <h3>Name: {{hero.name | uppercase}}</h3>
+    <label>Edit:
+      <input [(ngModel)]="hero.name" placeholder="name"/>
+    </label>
+  </div>
+  <p>Height: {{hero.height}}</p>
+  <img src="{{hero.pp}}" alt="hero pic" />
+</div>
