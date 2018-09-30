@@ -4,6 +4,7 @@
     <label>Edit:
       <input [(ngModel)]="hero.name" placeholder="name"/>
     </label>
+    <button (click)="save()" class="btn-save">save</button>
   </div>
   <p>Height: {{hero.height}}</p>
   <img src="{{hero.pp}}" alt="hero pic" />

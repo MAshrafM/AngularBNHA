@@ -61,3 +61,22 @@
   right: 10px;
   background: rgba(0,0,0,.99);
 }
+
+.btn-save{
+  position: relative;
+  top: 35px;
+  left: 160px;
+  width: 70px;
+  height: 30px;
+  font-family: sans-serif;
+  font-size: 16px;
+  border: none;
+  background-color: var(--secondary-color);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-save:hover{
+  background-color: #e85200;
+}
