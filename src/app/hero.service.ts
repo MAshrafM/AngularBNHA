@@ -5,9 +5,14 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { catchError, map, tap } from 'rxjs/operators';
 import { MessageService } from './message.service';
 
+const httpOptions = {
+  headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+};
+  
 @Injectable({
   providedIn: 'root'
 })
+
 export class HeroService {
 
   constructor(
@@ -20,10 +25,6 @@ export class HeroService {
   }
   
   private heroesUrl = 'api/heroes';
-  
-  const httpOptions = {
-    headers: new HttpHeaders({ 'Content-Type': 'application/json' })
-  };
   
   getHeroes(): Observable<Hero[]> {
     return this.http.get<Hero[]>(this.heroesUrl)
@@ -70,6 +71,16 @@ export class HeroService {
     return this.http.delete<Hero>(url, httpOptions).pipe(
       tap(_ => this.log(`deleted hero id=${id}`)),
       catchError(this.handleError<Hero>('deleteHero'))
+    );
+  }
+  
+  searchHeroes(term: string): Observable<Hero[]> {
+    if (!term.trim()) {
+      return of([]);
+    }
+    return this.http.get<Hero[]>(`${this.heroesUrl}/?name=${term}`).pipe(
+      tap(_ => this.log(`found heroes matching "${term}"`)),
+      catchError(this.handleError<Hero[]>('searchHeroes', []))
     );
   }
 }

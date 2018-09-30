@@ -18,7 +18,9 @@ h2, h3 {
 }
 body {
   margin: 2em 1em;
-  background: url('./assets/img/bg.png') center / cover no-repeat,#26d9fa radial-gradient(circle farthest-corner,#26d9fa,#138db7);
+  background: url('./assets/img/bg.png'),#26d9fa radial-gradient(circle farthest-corner,#26d9fa,#138db7);
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   min-height: 100vh;
 }
